@@ -7,8 +7,10 @@
   <div class="container py-14 py-md-16">
     <div class="row">
       <div class="col-lg-9 col-xl-8 col-xxl-7 mx-auto">
-        <h2 class="fs-15 text-uppercase text-primary text-center">آخر آخبارنا</h2>
-        <h3 class="display-4 mb-6 text-center">نشارك معك آخر الأخبار الخاصة بنا.</h3>
+        <h2 class="fs-15 text-uppercase text-primary text-center">آخر اعمالنا</h2>
+        <h3 class="display-4 mb-6 text-center">نستعرض هنا أحدث الأعمال المسجلة في الموقع
+
+            .</h3>
       </div>
       <!-- /column -->
     </div>
@@ -44,14 +46,14 @@
                       <!-- /.post-content -->
                     </div>
                     <!--/.card-body -->
-                    <div class="card-footer">
-                      <ul class="post-meta d-flex mb-0">
-                        <li class="post-date"><i class="fal fa-calendar-alt"></i> <span>14 Apr 2022</span></li>
-                        <li class="post-comments"><a href="#"><i class="fal fa-comment"></i> 4</a></li>
-                        <li class="post-likes ms-auto"><a href="#"><i class="fal fa-heart"></i> 5</a></li>
-                      </ul>
-                      <!-- /.post-meta -->
-                    </div>
+{{--                    <div class="card-footer">--}}
+{{--                      <ul class="post-meta d-flex mb-0">--}}
+{{--                        <li class="post-date"><i class="fal fa-calendar-alt"></i> <span>14 Apr 2022</span></li>--}}
+{{--                        <li class="post-comments"><a href="#"><i class="fal fa-comment"></i> 4</a></li>--}}
+{{--                        <li class="post-likes ms-auto"><a href="#"><i class="fal fa-heart"></i> 5</a></li>--}}
+{{--                      </ul>--}}
+{{--                      <!-- /.post-meta -->--}}
+{{--                    </div>--}}
                     <!-- /.card-footer -->
                   </div>
                   <!-- /.card -->
@@ -62,7 +64,7 @@
             </div>
             @endfor
 
- 
+
           </div>
           <!--/.swiper-wrapper -->
         </div>

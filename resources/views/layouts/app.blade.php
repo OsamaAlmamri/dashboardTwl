@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="csrf-token" content="{{ csrf_token() }}">  
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     @include('seo.index')
     <link rel="stylesheet" type="text/css" href="https://nafezly.com/css/cust-fonts.css">
     <link href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css" rel="stylesheet">
@@ -21,7 +21,8 @@
     <link rel="stylesheet" type="text/css" href="{{asset('/css/main-basic.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/plugins.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/style.css')}}">
-    
+    <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/custom.css')}}">
+
     {!!$settings->header_code!!}
     @livewireStyles
     @if(auth()->check())
@@ -50,7 +51,7 @@
         body,*{
             direction: rtl;
             text-align: start;
-            
+
         }
         html{
             font-size: 16px;
@@ -116,7 +117,7 @@
             .navbar-expand-lg .navbar-brand {
                 padding: 0px;
             }
-        
+
         }
         .offcanvas{
             background-color: #ffffff!important;
@@ -149,15 +150,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script> 
- 
+    <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+
     {{-- <script src="{{asset('/js/jquery.fileuploader.min.js')}}"></script> --}}
     <script src="{{asset('/js/validatorjs.min.js')}}"></script>
     <script src="{{asset('/js/favicon_notification.js')}}"></script>
     <script src="{{asset('/js/main.js')}}"></script>
     <script src="{{asset('/assets/js/plugins.js')}}"></script>
     <script src="{{asset('/assets/js/theme.js')}}"></script>
-    
+
 
     @livewireScripts
     @include('layouts.scripts')

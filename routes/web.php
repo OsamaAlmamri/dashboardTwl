@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\ClientController;
+use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\ServiceController;
 use App\Models\User;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
@@ -79,6 +82,9 @@ Route::prefix('admin')->middleware(['auth','ActiveAccount'])->name('admin.')->gr
         Route::post('menu-links/order',[MenuLinkController::class,'order'])->name('menu-links.order');
         Route::resource('menu-links',MenuLinkController::class);
         Route::resource('categories',CategoryController::class);
+        Route::resource('services',ServiceController::class);
+        Route::resource('clients',ClientController::class);
+        Route::resource('projects',ProjectController::class);
         Route::resource('redirections',RedirectionController::class);
         Route::get('traffics',[TrafficsController::class,'index'])->name('traffics.index');
         Route::get('traffics/{traffic}/logs',[TrafficsController::class,'logs'])->name('traffics.logs');
