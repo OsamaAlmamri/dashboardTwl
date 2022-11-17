@@ -36,7 +36,7 @@ use App\Http\Controllers\PluginController;
 
 
 Auth::routes();
-Route::get('/', function () {return view('front.index');})->name('home');
+Route::get('/', [\App\Http\Controllers\HomeController::class,'index'])->name('home');
 
 
 

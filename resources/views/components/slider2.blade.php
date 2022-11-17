@@ -1,10 +1,10 @@
 <section class="wrapper bg-light">
     <div class="container py-14 py-md-16">
-        <div class="row mb-3">
-            <div class="col-md-10 col-xl-9 col-xxl-7 mx-auto text-center">
-                <h2 class="display-4 mb-3 px-lg-14 text-center"> الاعلانات</h2>
-            </div>
-        </div>
+        {{--        <div class="row mb-3">--}}
+        {{--            <div class="col-md-10 col-xl-9 col-xxl-7 mx-auto text-center">--}}
+        {{--                <h2 class="display-4 mb-3 px-lg-14 text-center"> الاعلانات</h2>--}}
+        {{--            </div>--}}
+        {{--        </div>--}}
         <div class="position-relative">
             <div class="shape rounded-circle bg-soft-yellow rellax w-16 h-16" data-rellax-speed="1"
                  style="bottom: 0.5rem; right: -1.7rem;"></div>
@@ -16,7 +16,7 @@
                     <div class="swiper-wrapper">
 
 
-                        @for($i=1;$i<5;$i++)
+                        @foreach($announcements as $announcement)
                             <div class="swiper-slide">
                                 <div class="item-inner">
 
@@ -25,21 +25,33 @@
                                     {{--                                             data-fancybox="gallery"    />--}}
                                     {{--                                        </div>--}}
                                     <div class="card p-0">
-                                        <div class="row" data-fancybox="gallery">
+                                        <div class="row" >
 
                                             <div
                                                 class="slidet_content col-xl-7 col-lg-7 col-md-7 col-sm-6 col-xs-12">
-                                                <h2>تطبيقكم يجهز تطبيقك</h2>
-                                                <p>باسرع وقت وأفضل جودة</p>
+                                                <h2>  {{$announcement->title}}</h2>
+                                                <p> {!! $announcement->description !!}</p>
 
-                                                <a href="#exampleModal" data-toggle="modal"
-                                                   data-target="#exampleModal" class="slider_btn btn_hover">اطلب
-                                                    الان</a>
+{{--                                                <a href="#exampleModal" data-toggle="modal"--}}
+{{--                                                   data-target="#exampleModal" class="slider_btn btn_hover">اطلب--}}
+{{--                                                    الان</a>--}}
+
+                                                @if($announcement->url!=null)
+                                                <a
+                                                    style="z-index: 999999"
+                                                    href="{{$announcement->url}}" data-toggle="modal"
+
+                                                    target="{{$announcement->open_url_in=='NEW_WINDOW'?'_blank':'_self'}}"
+                                                   data-target="#exampleModal" class="slider_btn btn_hover">
+                                                    عرض المزيد
+
+                                                </a>
+                                                    @endif
                                             </div>
                                             <div class="image_mockup col-xl-5 col-lg-5 col-md-5 col-sm-6 col-xs-12">
                                                 <div class="container-image">
 
-                                                    <img class="p-2 watch" src="/images/screenshots/{{$i}}.jpg" alt=""
+                                                    <img class="p-2 watch" src="{{$announcement->image()}}" alt=""
                                                          data-fancybox="gallery"/>
                                                 </div>
                                             </div>
@@ -47,7 +59,7 @@
                                     </div>
                                 </div>
                             </div>
-                        @endfor
+                        @endforeach
 
 
                     </div>

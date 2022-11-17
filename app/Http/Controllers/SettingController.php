@@ -23,6 +23,12 @@ class SettingController extends Controller
     {
         if(!auth()->user()->isAbleTo('settings-update'))abort(403);
         \App\Models\Setting::query()->update([
+
+            'num_of_projects'=>$request->num_of_projects,
+            'num_of_customers'=>$request->num_of_customers,
+            'num_of_companies'=>$request->num_of_companies,
+            'num_of_clients'=>$request->num_of_clients,
+            'num_of_employees'=>$request->num_of_employees,
             'website_name'=>$request->website_name,
             'address'=>$request->address,
             'website_bio'=>$request->website_bio,
@@ -51,13 +57,13 @@ class SettingController extends Controller
             'robots_txt'=>$request->robots_txt,
             'dashboard_dark_mode'=>$request->dashboard_dark_mode==1?1:0
         ]);
-        
+
         if($request->hasFile('website_logo')){
             $file = $this->store_file([
                 'source'=>$request->website_logo,
                 'validation'=>"image",
                 'path_to_save'=>'/uploads/website/',
-                'type'=>'IMAGE', 
+                'type'=>'IMAGE',
                 'user_id'=>\Auth::user()->id,
                 'resize'=>null,
                 'small_path'=>'small/',
@@ -72,7 +78,7 @@ class SettingController extends Controller
                 'source'=>$request->website_wide_logo,
                 'validation'=>"image",
                 'path_to_save'=>'/uploads/website/',
-                'type'=>'IMAGE', 
+                'type'=>'IMAGE',
                 'user_id'=>\Auth::user()->id,
                 'resize'=>null,
                 'small_path'=>'small/',
@@ -87,7 +93,7 @@ class SettingController extends Controller
                 'source'=>$request->website_icon,
                 'validation'=>"image",
                 'path_to_save'=>'/uploads/website/',
-                'type'=>'IMAGE', 
+                'type'=>'IMAGE',
                 'user_id'=>\Auth::user()->id,
                 //'resize'=>[500,1000],
                 'small_path'=>'small/',
@@ -102,7 +108,7 @@ class SettingController extends Controller
                 'source'=>$request->website_cover,
                 'validation'=>"image",
                 'path_to_save'=>'/uploads/website/',
-                'type'=>'IMAGE', 
+                'type'=>'IMAGE',
                 'user_id'=>\Auth::user()->id,
                 'resize'=>[500,1000],
                 'small_path'=>'small/',

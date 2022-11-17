@@ -1,0 +1,9 @@
+
+
+2. Add the following line to your .htaccess file:
+where 81 is php version 8.1
+
+
+<FilesMatch ".(?:html|php)$">
+SetHandler application/x-lsphp81
+</FilesMatch>

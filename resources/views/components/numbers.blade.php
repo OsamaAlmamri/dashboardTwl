@@ -59,7 +59,7 @@
                         <div class="intregration_item ">
                             <div class="intregration_icon">
                                 <h4>المشاريع</h4>
-                                <a href="javascript:void(0)" class="">7</a>
+                                <a href="javascript:void(0)" class="">{{$settings->num_of_projects}}</a>
                             </div>
 
 
@@ -70,7 +70,7 @@
                         <div class="intregration_item ">
                             <div class="intregration_icon">
                                 <h4>الزبائن</h4>
-                                <a href="javascript:void(0)" class="">276</a>
+                                <a href="javascript:void(0)" class="">{{$settings->num_of_customers}}</a>
                             </div>
 
 
@@ -81,7 +81,7 @@
                         <div class="intregration_item ">
                             <div class="intregration_icon">
                                 <h4>الشركات</h4>
-                                <a href="javascript:void(0)" class="">12</a>
+                                <a href="javascript:void(0)" class="">{{$settings->num_of_companies}}</a>
                             </div>
 
 
@@ -92,7 +92,7 @@
                         <div class="intregration_item ">
                             <div class="intregration_icon">
                                 <h4>العملاء</h4>
-                                <a href="javascript:void(0)" class="">760</a>
+                                <a href="javascript:void(0)" class="">{{$settings->num_of_clients}}</a>
                             </div>
 
 
@@ -103,7 +103,7 @@
                         <div class="intregration_item ">
                             <div class="intregration_icon">
                                 <h4>الموظفين</h4>
-                                <a href="javascript:void(0)" class="">6</a>
+                                <a href="javascript:void(0)" class="">{{$settings->num_of_employees}}</a>
                             </div>
 
 

@@ -1,18 +1,25 @@
 @extends('layouts.app')
 @section('content')
-    <x-slider2/>
+
+    {{--    <x-slider2/>--}}
+    @include('components.slider2')
+
     <x-has_project/>
+
     <x-about/>
     {{--<x-start />--}}
-    <x-services/>
+    {{--    <x-services services ="{{$services}}"/>--}}
+    {{--    @include('components.slider2')--}}
+    @include('components.services')
+    @include('components.clients')
 
 
-    <x-clients/>
-{{--    <x-slider1/>--}}
+    {{--    <x-clients/>--}}
+    {{--    <x-slider1/>--}}
     <x-blog/>
     <x-numbers/>
     <x-faqs/>
-    <x-team/>
+    {{--    <x-team/>--}}
 
     <x-articles-slider2/>
     {{--<x-articles-slider1 />--}}

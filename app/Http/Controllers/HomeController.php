@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Announcement;
+use App\Models\Client;
+use App\Models\Service;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -23,6 +26,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $services = Service::orderBy('id', 'ASC')->get();
+        $clients = Client::orderBy('id', 'ASC')->get();
+        $announcements = Announcement::orderBy('id', 'ASC')->get();
+
+        return view('front.index', compact('services', 'clients','announcements'));
+
     }
 }

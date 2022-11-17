@@ -86,11 +86,6 @@
                                 <img src="{{$announcement->image()}}" style="width:180px;">
                             </div>
                         </div>
-                        <div class="col-12 pt-3">
-                            @if($announcement->image!=null)
-                                <img src="{{$announcement->image()}}" style="width:100px">
-                            @endif
-                        </div>
                     </div>
 
                     <div class="col-12 p-3">

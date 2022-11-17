@@ -9,7 +9,7 @@ class Service extends Model
 {
     use HasFactory;
     public $guarded=['id','created_at','updated_at'];
-    public $appends=['url'];
+//    public $appends=['url'];
     public function getRouteKeyName(){
         return 'slug';
     }
