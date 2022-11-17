@@ -81,6 +81,22 @@
                         </div>
                         <div class="col-12 px-0 d-flex mb-3 row pb-3">
                             <div class="col-12 col-lg-3 px-2 text-lg-end pt-1 pb-3 pb-lg-0">
+                                تضمين خريطة ifream
+                            </div>
+                            <div class="col-12 col-lg-9 px-2">
+                                <textarea name="map_ifream" class="form-control">{{$settings->map_ifream}}</textarea>
+                            </div>
+                        </div>
+                        <div class="col-12 px-0 d-flex mb-3 row pb-3">
+                            <div class="col-12 col-lg-3 px-2 text-lg-end pt-1 pb-3 pb-lg-0">
+                              )العلامة المسجلة(  عن الموقع
+                            </div>
+                            <div class="col-12 col-lg-9 px-2">
+                                <textarea name="footer_about" class=" form-control">{{$settings->footer_about}}</textarea>
+                            </div>
+                        </div>
+                        <div class="col-12 px-0 d-flex mb-3 row pb-3">
+                            <div class="col-12 col-lg-3 px-2 text-lg-end pt-1 pb-3 pb-lg-0">
                                 عن الموقع
                             </div>
                             <div class="col-12 col-lg-9 px-2">
@@ -94,6 +110,24 @@
                             <div class="col-12 col-lg-9 px-2">
                                 <input type="email" name="contact_email" class="form-control"
                                        value="{{$settings->contact_email}}">
+                            </div>
+                        </div>
+                        <div class="col-12 px-0 d-flex mb-3 row pb-3">
+                            <div class="col-12 col-lg-3 px-2 text-lg-end pt-1 pb-3 pb-lg-0">
+                              2  بريد التواصل
+                            </div>
+                            <div class="col-12 col-lg-9 px-2">
+                                <input type="email" name="email2" class="form-control"
+                                       value="{{$settings->email2}}">
+                            </div>
+                        </div>
+                        <div class="col-12 px-0 d-flex mb-3 row pb-3">
+                            <div class="col-12 col-lg-3 px-2 text-lg-end pt-1 pb-3 pb-lg-0">
+                             3   بريد التواصل
+                            </div>
+                            <div class="col-12 col-lg-9 px-2">
+                                <input type="email" name="email3" class="form-control"
+                                       value="{{$settings->email3}}">
                             </div>
                         </div>
                         <div class="col-12 px-0 d-flex mb-3 row pb-3">

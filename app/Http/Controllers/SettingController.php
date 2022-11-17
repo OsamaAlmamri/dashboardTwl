@@ -25,6 +25,10 @@ class SettingController extends Controller
         \App\Models\Setting::query()->update([
 
             'num_of_projects'=>$request->num_of_projects,
+            'map_ifream'=>$request->map_ifream,
+            'footer_about'=>$request->footer_about,
+            'email2'=>$request->email2,
+            'email3'=>$request->email3,
             'num_of_customers'=>$request->num_of_customers,
             'num_of_companies'=>$request->num_of_companies,
             'num_of_clients'=>$request->num_of_clients,

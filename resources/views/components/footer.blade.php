@@ -1,37 +1,39 @@
 <footer class="bg-soft-primary pt-5">
-{{--    <div class="container">--}}
-{{--        <div class="row">--}}
-{{--            <div class="col-xl-11 col-xxl-10 mx-auto">--}}
-{{--                <div class="card image-wrapper bg-full bg-image bg-overlay bg-overlay-400 mt-n50p mb-n5"--}}
-{{--                     data-image-src="/assets/img/photos/4.png">--}}
-{{--                    <div--}}
-{{--                        class="card-body p-6 p-md-11 d-lg-flex flex-row align-items-lg-center justify-content-md-between text-center text-lg-start">--}}
-{{--                        <h3 class="display-6 mb-6 mb-lg-0 pe-lg-15 pe-xxl-18 text-white">كن ايجابيا وساعد في تطوير--}}
-{{--                            اللوحة أكثر في كل مرة تستخدمها في مشروع جديد.</h3>--}}
-{{--                        <a href="https://www.paypal.me/nafezlycom" class="btn btn-white rounded-pill mb-0 text-nowrap">قدم--}}
-{{--                            مساعدة</a>--}}
-{{--                    </div>--}}
-{{--                    <!--/.card-body -->--}}
-{{--                </div>--}}
-{{--                <!--/.card -->--}}
-{{--            </div>--}}
-{{--            <!-- /column -->--}}
-{{--        </div>--}}
-{{--        <!-- /.row -->--}}
-{{--    </div>--}}
+    {{--    <div class="container">--}}
+    {{--        <div class="row">--}}
+    {{--            <div class="col-xl-11 col-xxl-10 mx-auto">--}}
+    {{--                <div class="card image-wrapper bg-full bg-image bg-overlay bg-overlay-400 mt-n50p mb-n5"--}}
+    {{--                     data-image-src="/assets/img/photos/4.png">--}}
+    {{--                    <div--}}
+    {{--                        class="card-body p-6 p-md-11 d-lg-flex flex-row align-items-lg-center justify-content-md-between text-center text-lg-start">--}}
+    {{--                        <h3 class="display-6 mb-6 mb-lg-0 pe-lg-15 pe-xxl-18 text-white">كن ايجابيا وساعد في تطوير--}}
+    {{--                            اللوحة أكثر في كل مرة تستخدمها في مشروع جديد.</h3>--}}
+    {{--                        <a href="https://www.paypal.me/nafezlycom" class="btn btn-white rounded-pill mb-0 text-nowrap">قدم--}}
+    {{--                            مساعدة</a>--}}
+    {{--                    </div>--}}
+    {{--                    <!--/.card-body -->--}}
+    {{--                </div>--}}
+    {{--                <!--/.card -->--}}
+    {{--            </div>--}}
+    {{--            <!-- /column -->--}}
+    {{--        </div>--}}
+    {{--        <!-- /.row -->--}}
+    {{--    </div>--}}
 
 
     <div class="container pb-12 text-center">
         <div class="row mb-3">
             <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-xs-12">
                 <div class="f_widget company_widget infocompany">
-                    <a href="http://tatbeqakum.test" class="f-logo">
-                        <img alt="" src="http://tatbeqakum.test/uploads/logo.png"
-                             srcset="http://tatbeqakum.test/uploads/logo.png">
+                    <a href="#" class="f-logo">
+                        <img alt="" src="{{$settings->website_logo()}}"
+                             srcset="{{$settings->website_logo()}}">
 
                         <div class="widget-wrap">
-                            <h4 class="header_footer_bottom" dir="rtl">تطبيقكم تابع لمؤسسة أشر واي للتجارة
-                                وهي مسجلة تجارية برقم 4031267612</h4>
+                            <h4 class="header_footer_bottom" dir="rtl">
+                                {{$settings->footer_about}}
+
+                            </h4>
 
 
                         </div>
@@ -51,8 +53,9 @@
                                 <div class="mmedia-body">
                                     <address>
                                         <p>
-
-                                            &nbsp;المملكة العربية السعودية -مكة المكرمة</p>
+                                            {{$settings->address}}
+                                            &nbsp;
+                                        </p>
                                     </address>
                                 </div>
 
@@ -64,9 +67,13 @@
 
                             </a>
                             <div class="mmedia-body"><a href="http://tatbeqakum.test" class="f-logo">
-                                </a><a href="mailto:Tatbeqakum@gmail.com">Tatbeqakum@gmail.com</a>
-                                <a href="mailto:inf@tatbeqakum.com">inf@tatbeqakum.com</a>
-                                <a href="mailto:Amjadi3030@gmail.com">Amjadi3030@gmail.com</a>
+                                </a><a href="mailto:{{$settings->contact_email}}">{{$settings->contact_email}}</a>
+                                @if($settings->email2!=null)
+                                    <a href="mailto:{{$settings->email2}}">{{$settings->email2}}</a>
+                                @endif
+                                @if($settings->email3!=null)
+                                    <a href="mailto:{{$settings->email3}}">{{$settings->email3}}</a>
+                                @endif
                             </div>
                         </div>
 
@@ -74,7 +81,7 @@
 
 
                             <div class="mmedia-body" dir="ltr">
-                                <a href="call:0555845631"><span dir="ltr">0555845631</span></a>
+                                <a href="call:{{$settings->phone}} "><span dir="ltr">{{$settings->phone}} </span></a>
 
                             </div>
                         </div>

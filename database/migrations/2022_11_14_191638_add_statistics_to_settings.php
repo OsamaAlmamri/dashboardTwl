@@ -16,6 +16,11 @@ return new class extends Migration
         Schema::table('settings', function (Blueprint $table) {
             //
 
+            $table->text('footer_about')->nullable();
+            $table->text('map_ifream')->nullable();
+            $table->string('email2')->nullable();
+            $table->string('email3')->nullable();
+
             $table->integer('num_of_projects')->default(1);
             $table->integer('num_of_customers')->default(1);
             $table->integer('num_of_companies')->default(1);
