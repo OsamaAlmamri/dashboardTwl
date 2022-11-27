@@ -4,6 +4,7 @@ use App\Http\Controllers\ClientController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\ServiceController;
 use App\Models\User;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\NotificationsController;
@@ -38,7 +39,11 @@ use App\Http\Controllers\PluginController;
 Auth::routes();
 Route::get('/', [\App\Http\Controllers\HomeController::class,'index'])->name('home');
 
+Route::get('/storage_link',function (){
+    $status = Artisan::call('storage:link');
 
+    return '<h1>storage linked</h1>';
+});
 
 
 Route::get('/test/share' , function (){
