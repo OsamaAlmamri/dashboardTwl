@@ -30,7 +30,7 @@
 				<div class="col-12 col-lg-4 mb-4">
 		            <article>
 		              <div class="card shadow-lg">
-		                <figure class="card-img-top overlay overlay-1"><a href="{{route('article.show',$article)}}"> <img src="{{$article->main_image()}}" alt="" style="height:280px;object-fit: cover;vertical-align: middle;" /></a>
+		                <figure class="card-img-top overlay overlay-1"><a href="{{route('article.show',$article)}}"> <img src="{{$article->main_image()}}" alt="" style="height:280px !important;object-fit: cover;vertical-align: middle;" /></a>
 		                  <figcaption>
 		                    <h5 class="from-top mb-0 text-center">عرض المزيد</h5>
 		                  </figcaption>
@@ -43,16 +43,16 @@
 			                    		<a href="{{route('category.show',$article_category)}}" class="hover" rel="category">{{$article_category->title}}</a>
 			                    	@endif
 		                    	@endforeach
-		                      
+
 		                    </div>
 		                    <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="{{route('article.show',$article)}}">{{$article->title}}</a></h2>
 		                  </div>
 		                  <div class="post-footer">
 		                    <ul class="post-meta d-flex mb-0">
-		                      <li class="post-date"> 
-		                      	<span> 
+		                      <li class="post-date">
+		                      	<span>
 		                      		<i class="fal fa-clock"></i>  {{\Carbon::parse($article->created_at)->diffForHumans()}}
-		                      	</span> 
+		                      	</span>
 		                      </li>
 		                      @if($article->comments_count==null || $article->comments_count ==0)
 		                      <li class="post-comments"><a href="#">  {{$article->comments_count}} <i class="fal fa-comment"></i> </a></li>
@@ -62,7 +62,7 @@
 		                </div>
 		              </div>
 		            </article>
-		          </div> 
+		          </div>
 				@endforeach
 
 				<div class="col-12 p-2">

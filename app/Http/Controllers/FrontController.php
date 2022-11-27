@@ -13,12 +13,12 @@ use App\Models\Category;
 
 class FrontController extends Controller
 {
-    
+
     public function index(Request $request)
     {
         return view('front.index');
     }
-    
+
     public function comment_post(Request $request)
     {
         if(auth()->check()){
@@ -72,7 +72,7 @@ class FrontController extends Controller
         $articles = Article::where(function($q)use($request,$category){
             if($request->user_id!=null)
                 $q->where('user_id',$request->user_id);
-            
+
             $q->whereHas('categories',function($q)use($request,$category){
                 $q->where('category_id',$category->id);
             });
@@ -110,6 +110,7 @@ class FrontController extends Controller
             if($request->user_id!=null)
                 $q->where('user_id',$request->user_id);
         })->with(['categories','tags'])->withCount(['comments'=>function($q){$q->where('reviewed',1);}])->orderBy('id','DESC')->paginate();
+
         return view('front.pages.blog',compact('articles'));
     }
     public function views_increase_article(Article $article)

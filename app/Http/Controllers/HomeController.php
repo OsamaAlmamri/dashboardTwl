@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Announcement;
+use App\Models\Article;
 use App\Models\Client;
 use App\Models\Service;
 use Illuminate\Http\Request;
@@ -29,8 +30,11 @@ class HomeController extends Controller
         $services = Service::orderBy('id', 'ASC')->get();
         $clients = Client::orderBy('id', 'ASC')->get();
         $announcements = Announcement::orderBy('id', 'ASC')->get();
+        $articles = Article::with(['categories','tags'])
+            ->withCount(['comments'=>function($q){$q->where('reviewed',1);}])
+            ->orderBy('id','DESC')->limit(10)->get();
 
-        return view('front.index', compact('services', 'clients','announcements'));
+        return view('front.index', compact('services', 'clients','announcements','articles'));
 
     }
 }

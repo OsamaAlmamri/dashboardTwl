@@ -3,7 +3,7 @@
     .swiper-navigation{
       direction: ltr;
     }
-    
+
   </style>
   <div class="overflow-hidden">
     <div class="container py-14 py-md-16">
@@ -16,7 +16,7 @@
       </div>
 
 
- 
+
 
       <!--/.row -->
       <div class="swiper-container nav-bottom nav-color mb-14" data-margin="30" data-dots="false" data-nav="true" data-items-lg="3" data-items-md="2" data-items-xs="1">

@@ -405,48 +405,48 @@
 
 
 
-                    @permission('plugins-read')
-                    <div class="col-12 px-0" style="cursor: pointer;">
-                        <div class="col-12 item px-0 d-flex row " >
-                            <div class="col-12 d-flex px-0 item-container">
-                                <div style="width: 50px" class="px-3 text-center">
-                                    <span class="far fa-box-open font-2" style="color:#ff9800"> </span>
-                                </div>
-                                <div style="width: calc(100% - 50px)" class="px-2 item-container-title has-sub-menu">
-                                    الاضافات
-                                </div>
-                            </div>
-                            <div class="col-12 px-0" >
-                                <ul class="sub-item font-1" style="list-style:none;">
+{{--                    @permission('plugins-read')--}}
+{{--                    <div class="col-12 px-0" style="cursor: pointer;">--}}
+{{--                        <div class="col-12 item px-0 d-flex row " >--}}
+{{--                            <div class="col-12 d-flex px-0 item-container">--}}
+{{--                                <div style="width: 50px" class="px-3 text-center">--}}
+{{--                                    <span class="far fa-box-open font-2" style="color:#ff9800"> </span>--}}
+{{--                                </div>--}}
+{{--                                <div style="width: calc(100% - 50px)" class="px-2 item-container-title has-sub-menu">--}}
+{{--                                    الاضافات--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <div class="col-12 px-0" >--}}
+{{--                                <ul class="sub-item font-1" style="list-style:none;">--}}
 
-                                    @permission('plugins-read')
-                                    <li><a href="{{route('admin.plugins.index')}}" style="font-size: 16px;"><span class="fal fa-box-open px-2" style="width: 28px;font-size: 15px;"></span> كل الاضافات
+{{--                                    @permission('plugins-read')--}}
+{{--                                    <li><a href="{{route('admin.plugins.index')}}" style="font-size: 16px;"><span class="fal fa-box-open px-2" style="width: 28px;font-size: 15px;"></span> كل الاضافات--}}
 
-                                        @if(count($plugins))
-                                        <span style="background: #d34339;border-radius: 2px;color:var(--background-1);display: inline-block;font-size: 11px;text-align: center;padding: 1px 5px;margin: 0px 8px">{{count($plugins)}}</span>
+{{--                                        @if(count($plugins))--}}
+{{--                                        <span style="background: #d34339;border-radius: 2px;color:var(--background-1);display: inline-block;font-size: 11px;text-align: center;padding: 1px 5px;margin: 0px 8px">{{count($plugins)}}</span>--}}
 
-                                        @endif
-
-
-                                    </a></li>
-                                    @endpermission
+{{--                                        @endif--}}
 
 
-                                    @foreach($plugins as $plugin)
-                                        @if($plugin->get('type')=="plugin")
-                                            @permission($plugin->get('route').'-read')
-                                            <li><a href="{{route('admin.teams.index')}}" style="font-size: 16px;"><span class="{{$plugin->get('icon')}} px-2" style="width: 28px;font-size: 15px;"></span> {{$plugin->get('title')}}
-                                            </a></li>
-                                            @endpermission
-                                        @endif
-                                    @endforeach
+{{--                                    </a></li>--}}
+{{--                                    @endpermission--}}
 
 
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    @endpermission
+{{--                                    @foreach($plugins as $plugin)--}}
+{{--                                        @if($plugin->get('type')=="plugin")--}}
+{{--                                            @permission($plugin->get('route').'-read')--}}
+{{--                                            <li><a href="{{route('admin.teams.index')}}" style="font-size: 16px;"><span class="{{$plugin->get('icon')}} px-2" style="width: 28px;font-size: 15px;"></span> {{$plugin->get('title')}}--}}
+{{--                                            </a></li>--}}
+{{--                                            @endpermission--}}
+{{--                                        @endif--}}
+{{--                                    @endforeach--}}
+
+
+{{--                                </ul>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    @endpermission--}}
 
 
 
