@@ -1,5 +1,5 @@
 <section class="wrapper bg-light">
-    <div class="container py-14 py-md-16">
+    <div class="container pb-14 pb-md-16">
         {{--        <div class="row mb-3">--}}
         {{--            <div class="col-md-10 col-xl-9 col-xxl-7 mx-auto text-center">--}}
         {{--                <h2 class="display-4 mb-3 px-lg-14 text-center"> الاعلانات</h2>--}}
