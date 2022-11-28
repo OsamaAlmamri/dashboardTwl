@@ -49,7 +49,7 @@
                                                     @endif
                                             </div>
                                             <div class="image_mockup col-xl-5 col-lg-5 col-md-5 col-sm-6 col-xs-12">
-                                                <div class="container-image">
+                                                <div class="">
 
                                                     <img class="p-2 watch" src="{{$announcement->image()}}" alt=""
                                                          data-fancybox="gallery"/>
