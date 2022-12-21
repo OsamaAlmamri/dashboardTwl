@@ -95,10 +95,10 @@
                     <h3 class="f-title f_600 t_color f_size_25 mb_40">روابط سريعة</h3>
                     <ul class="list-unstyled f_list">
                         <li><a href="#index">الرئيسية</a></li>
-                        <li><a href="#contact_us">احصائياتنا</a></li>
-                        <li><a href="http://tatbeqakum.test/ourworks">الاعمال</a></li>
+{{--                        <li><a href="#contact_us">احصائياتنا</a></li>--}}
+                        <li><a href="#">الاعمال</a></li>
                         <li><a href="#">تواصل معنا</a></li>
-                        <li><a href="#">التقييمات</a></li>
+{{--                        <li><a href="#">التقييمات</a></li>--}}
                     </ul>
                 </div>
             </div>
@@ -137,7 +137,7 @@
                 {{--          <!--/column -->--}}
                 {{--        </div>--}}
                 <!--/.row -->
-                <p class="text-center">© {{date('Y')}} <a href="#">{{$settings->website_name}}</a>.
+                <p class="text-center">© {{date('Y')}} <a href="http://tatbeqakum.com" target="_blank">تطبيقكم</a>.
                     جميع الحقوق محفوظة.</p>
                 <nav class="nav social justify-content-center">
                     @if($settings->twitter_link!=null)
@@ -151,6 +151,9 @@
                     @endif
                     @if($settings->youtube_link!=null)
                         <a href="{{$settings->youtube_link}}"><i class="fab fa-youtube"></i></a>
+                    @endif
+                    @if($settings->whatsapp_link!=null)
+                        <a href="{{$settings->whatsapp_link}}"><i class="fab fa-whatsapp"></i></a>
                     @endif
                 </nav>
                 <!-- /.social -->

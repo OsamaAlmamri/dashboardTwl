@@ -1,16 +1,16 @@
-<section class="wrapper bg-light">
+<section class="wrapper bg-light dots_left_background ">
   <style type="text/css">
     .swiper-navigation{
       direction: ltr;
     }
 
   </style>
-  <div class="overflow-hidden">
+  <div class="overflow-hidden lines_right_background">
     <div class="container py-14 py-md-16">
       <div class="row">
         <div class="col-xl-7 col-xxl-6 mx-auto text-center">
           <i class="fal fa-pen-alt font-5"></i>
-          <h2 class="display-5 text-center mt-2 mb-10">إليك أحدث مقالاتنا.</h2>
+          <h2 class="display-5 mt-12 text-center mt-2 mb-10">إليك أحدث اعمالنا.</h2>
         </div>
         <!--/column -->
       </div>

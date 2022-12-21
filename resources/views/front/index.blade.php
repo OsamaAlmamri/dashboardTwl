@@ -4,7 +4,7 @@
     {{--    <x-slider2/>--}}
     @include('components.slider2')
 
-    <x-has_project/>
+{{--    <x-has_project/>--}}
 
     <x-about/>
     {{--<x-start />--}}
@@ -19,7 +19,7 @@
     {{--    <x-slider1/>--}}
 {{--    <x-blog/>--}}
 {{--    <x-our-blogs />--}}
-    <x-numbers/>
+{{--    <x-numbers/>--}}
     <x-faqs/>
     {{--    <x-team/>--}}
 
@@ -27,5 +27,6 @@
 {{--    <x-articles-slider1 />--}}
 
     <x-map/>
+    <x-hours_work/>
     {{--<x-call-to-action />--}}
 @endsection

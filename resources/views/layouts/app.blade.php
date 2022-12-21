@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="{{asset('/css/main-basic.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/plugins.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/style.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/custom.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/custom2.css')}}">
 
     {!!$settings->header_code!!}
     @livewireStyles
@@ -51,6 +51,7 @@
         body,*{
             direction: rtl;
             text-align: start;
+          color:  #000000;
 
         }
         html{
@@ -128,10 +129,89 @@
         .offcanvas.offcanvas-end{
             right: -1px!important;
         }
+
+        .dots_left_background
+        {
+            background-image: url("images/nouf/662.png");
+            background-position:top left;
+            background-repeat: no-repeat;
+            background-size: auto;
+        }
+        .dots2_left_background
+        {
+            background-image: url("images/nouf/664.png");
+            background-position:top left;
+            background-repeat: no-repeat;
+            background-size: auto;
+        }
+        .dots_right_background
+        {
+            background-image: url("images/nouf/664.png");
+            background-position:top right;
+            background-repeat: no-repeat;
+            background-size: auto;
+        }
+
+        .lines_right_background
+        {
+            background-image: url("images/nouf/663.png");
+            background-position: top right;
+            background-repeat: no-repeat;
+            background-size: auto;
+        }
+        .lines_left_background
+        {
+            background-image: url("images/nouf/663.png");
+            background-position: top left;
+            background-repeat: no-repeat;
+            background-size: auto;
+        }
+        .bg-light {
+            --bs-bg-opacity: 1;
+             background-color:unset !important;
+        }
+        /*.bg-line.red {*/
+        /*    background: repeating-linear-gradient(-55deg, rgba(255, 255, 255, 0) 0.8px, #e2626b 1.6px, #e2626b 3px, rgba(255, 255, 255, 0) 3.8px, rgba(255, 255, 255, 0) 10px);*/
+        /*}*/
+
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 32px;
+            border: none;
+            outline: none;
+            background-color: #4caf50;
+            color: white;
+            cursor: pointer;
+            padding: 3px 17px;
+            border-radius: 44px;
+        }
+
+        .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+            color: #d1334b;
+            /*color: #f7ad42;*/
+
+        }
+
+        .swiper-container.nav-color .swiper-button, .swiper-container.nav-color .swiper-slide figure .item-link {
+            background: rgb(247 173 66) !important;
+            color: #fff !important;
+        }
+        a{
+            color: rgb(247 173 66) !important;
+        }
+
+        .header_footer_bottom {
+            font-size: 20px;
+            text-align: center;
+        }
     </style>
     @yield('styles')
 </head>
-<body style="background:#eef4f5">
+<body >
     <style type="text/css">
         #toast-container>div {
             opacity: 1;
@@ -145,6 +225,10 @@
             @yield('content')
         </main>
         <x-footer />
+
+            <a  id="myBtn" title="Whats App" href="{{$settings->whatsapp_link}}"><i style="color: white" class="fab fa-whatsapp"></i></a>
+
+
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -158,11 +242,28 @@
     <script src="{{asset('/js/main.js')}}"></script>
     <script src="{{asset('/assets/js/plugins.js')}}"></script>
     <script src="{{asset('/assets/js/theme.js')}}"></script>
+<script>
+    let mybutton = document.getElementById("myBtn");
 
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+
+</script>
 
     @livewireScripts
     @include('layouts.scripts')
     @yield('scripts')
+
+
     {!!$settings->footer_code!!}
 </body>
 </html>

@@ -26,6 +26,7 @@ class SettingController extends Controller
 
             'num_of_projects'=>$request->num_of_projects,
             'map_ifream'=>$request->map_ifream,
+            'hourWorks'=>$request->hourWorks,
             'footer_about'=>$request->footer_about,
             'email2'=>$request->email2,
             'email3'=>$request->email3,

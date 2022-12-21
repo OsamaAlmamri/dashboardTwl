@@ -15,7 +15,7 @@
                                 العنوان
                             </div>
                             <div class="col-12 pt-3">
-                                <input type="text" name="title" required maxlength="190" class="form-control"
+                                <input type="text" name="title"  maxlength="190" class="form-control"
                                        value="{{old('title')}}">
                             </div>
                         </div>
@@ -70,7 +70,7 @@
                                 الرابط
                             </div>
                             <div class="col-12 pt-3">
-                                <input type="url" name="url" required class="form-control"
+                                <input type="url" name="url"  class="form-control"
                                        value="{{old('url')}}">
                             </div>
                         </div>

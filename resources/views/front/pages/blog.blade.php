@@ -7,8 +7,8 @@
 	        <div class="container py-12 py-md-10 text-center">
 	          <div class="row">
 	            <div class="col-md-7 col-lg-6 col-xl-5 mx-auto">
-	              <h1 class="display-1 mb-3 text-center">المدونة</h1>
-	              <p class="lead px-lg-5 px-xxl-8 mb-1 text-center">إليك أحدث مقالاتنا.</p>
+	              <h1 class="display-1 mb-3 text-center">اعمالنا</h1>
+	              <p class="lead px-lg-5 px-xxl-8 mb-1 text-center">إليك أحدث اعمالنا.</p>
 	            </div>
 	            <!-- /column -->
 	          </div>

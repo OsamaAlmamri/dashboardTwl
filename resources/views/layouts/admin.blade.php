@@ -309,14 +309,14 @@
                                     @permission('services-read')
                                     <li><a href="{{route('admin.services.index')}}" style="font-size: 16px;"><span class="fal fa-tag px-2" style="width: 28px;font-size: 15px;"></span> الخدمات</a></li>
                                     @endpermission
-                                    @permission('projects-read')
-                                    <li><a href="{{route('admin.projects.index')}}" style="font-size: 16px;"><span class="fal fa-tag px-2" style="width: 28px;font-size: 15px;"></span> اعمالنا</a></li>
-                                    @endpermission
+{{--                                    @permission('projects-read')--}}
+{{--                                    <li><a href="{{route('admin.projects.index')}}" style="font-size: 16px;"><span class="fal fa-tag px-2" style="width: 28px;font-size: 15px;"></span> اعمالنا</a></li>--}}
+{{--                                    @endpermission--}}
                                     @permission('clients-read')
                                     <li><a href="{{route('admin.clients.index')}}" style="font-size: 16px;"><span class="fal fa-tag px-2" style="width: 28px;font-size: 15px;"></span> العملاء</a></li>
                                     @endpermission
                                     @permission('articles-read')
-                                    <li><a href="{{route('admin.articles.index')}}" style="font-size: 16px;"><span class="fal fa-book px-2" style="width: 28px;font-size: 15px;"></span> المقالات</a></li>
+                                    <li><a href="{{route('admin.articles.index')}}" style="font-size: 16px;"><span class="fal fa-book px-2" style="width: 28px;font-size: 15px;"></span> اعمالنا</a></li>
                                     @endpermission
 
                                     @permission('comments-read')

@@ -1,4 +1,5 @@
-<section class="wrapper bg-light">
+<section class="wrapper bg-light dots_left_background ">
+    <div class="lines_right_background">
     <div class="container pb-14 pb-md-16">
         {{--        <div class="row mb-3">--}}
         {{--            <div class="col-md-10 col-xl-9 col-xxl-7 mx-auto text-center">--}}
@@ -6,10 +7,10 @@
         {{--            </div>--}}
         {{--        </div>--}}
         <div class="position-relative">
-            <div class="shape rounded-circle bg-soft-yellow rellax w-16 h-16" data-rellax-speed="1"
-                 style="bottom: 0.5rem; right: -1.7rem;"></div>
-            <div class="shape rounded-circle bg-line red rellax w-16 h-16" data-rellax-speed="1"
-                 style="top: 0.5rem; left: -1.7rem;"></div>
+{{--            <div class="shape rounded-circle bg-soft-yellow rellax w-16 h-16" data-rellax-speed="1"--}}
+{{--                 style="bottom: 0.5rem; right: -1.7rem;"></div>--}}
+{{--            <div class="shape rounded-circle bg-line red rellax w-16 h-16" data-rellax-speed="1"--}}
+{{--                 style="top: 0.5rem; left: -1.7rem;"></div>--}}
             <div class="swiper-container dots-closer mb-6" data-margin="0" data-dots="true" data-items-xxl="1"
                  data-items-lg="1" data-items-md="1" data-items-xs="1">
                 <div class="swiper">
@@ -51,7 +52,7 @@
                                             <div class="image_mockup col-xl-5 col-lg-5 col-md-5 col-sm-6 col-xs-12">
                                                 <div class="">
 
-                                                    <img class="p-2 watch" src="{{$announcement->image()}}" alt=""
+                                                    <img class=" watch" src="{{$announcement->image()}}" alt=""
                                                          data-fancybox="gallery"/>
                                                 </div>
                                             </div>
@@ -66,5 +67,6 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
 </section>

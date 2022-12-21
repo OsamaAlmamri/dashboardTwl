@@ -5,12 +5,12 @@
   <div class="container flex-lg-row flex-nowrap align-items-center">
     <div class="navbar-brand">
       <a href="/">
-        <img src="{{$settings->website_wide_logo()}}" style="width: 140px;" srcset="./assets/img/logo@2x.png 2x" alt="" />
+        <img src="{{$settings->website_wide_logo()}}" style="width: 140px;"  alt="" />
       </a>
     </div>
     <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-end navbar-light">
       <div class="offcanvas-header d-lg-none">
-        <a href="/"><img src="{{$settings->website_wide_logo()}}"  style="width: 140px;" srcset="./assets/img/logo-light@2x.png 2x" alt="" /></a>
+        <a href="/"><img src="{{$settings->website_wide_logo()}}"  style="width: 140px;"  alt="" /></a>
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body  d-flex flex-column h-100">
@@ -21,18 +21,34 @@
 
           @if($menu !=null)
             @foreach($menu->links as $link)
-            <li class="nav-item"><a class="nav-link" href="{{$link->url}}"><span class="{{$link->icon}} font-1" style="color: #0194fe;width: 15px"></span> {{$link->title}}</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{$link->url}}"><span class="{{$link->icon}} font-1" style="color: #ffc107;width: 15px"></span> {{$link->title}}</a></li>
             @endforeach
           @endif
-      
-        </ul> 
+            <nav class="nav social  d-lg-none justify-content-center">
+                @if($settings->twitter_link!=null)
+                    <a href="{{$settings->twitter_link}}"><i class="fab fa-twitter"></i></a>
+                @endif
+                @if($settings->facebook_link!=null)
+                    <a href="{{$settings->facebook_link}}"><i class="fab fa-facebook-f"></i></a>
+                @endif
+                @if($settings->instagram_link!=null)
+                    <a href="{{$settings->instagram_link}}"><i class="fab fa-instagram"></i></a>
+                @endif
+                @if($settings->youtube_link!=null)
+                    <a href="{{$settings->youtube_link}}"><i class="fab fa-youtube"></i></a>
+                @endif
+                @if($settings->whatsapp_link!=null)
+                    <a href="{{$settings->whatsapp_link}}"><i class="fab fa-whatsapp"></i></a>
+                @endif
+            </nav>
+        </ul>
       </div>
     </div>
     <div class="navbar-other ms-lg-4">
       <ul class="navbar-nav flex-row align-items-center ms-auto">
 
 
- 
+
 
         @auth
           <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
@@ -54,6 +70,7 @@
           <button class="hamburger offcanvas-nav-btn"><span></span></button>
         </li>
       </ul>
+
       <!-- /.navbar-nav -->
     </div>
     <!-- /.navbar-other -->

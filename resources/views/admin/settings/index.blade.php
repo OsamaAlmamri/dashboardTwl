@@ -34,10 +34,10 @@
                      data-opentab="appearance-tab">
                     <span class="fal fa-paint-roller me-2"></span> مظهر
                 </div>
-                <div class="d-flex justify-content-center align-items-center p-0 m-2 settings-tab-opener"
-                     data-opentab="statistics-tab">
-                    <span class="fal fa-chart-area me-2"></span> احصائيات
-                </div>
+{{--                <div class="d-flex justify-content-center align-items-center p-0 m-2 settings-tab-opener"--}}
+{{--                     data-opentab="statistics-tab">--}}
+{{--                    <span class="fal fa-chart-area me-2"></span> احصائيات--}}
+{{--                </div>--}}
                 <div class="d-flex justify-content-center align-items-center p-0 m-2 settings-tab-opener"
                      data-opentab="links-tab">
                     <span class="fal fa-link me-2"></span> روابط
@@ -101,6 +101,14 @@
                             </div>
                             <div class="col-12 col-lg-9 px-2">
                                 <textarea name="website_bio" class="editor form-control">{{$settings->website_bio}}</textarea>
+                            </div>
+                        </div>
+                        <div class="col-12 px-0 d-flex mb-3 row pb-3">
+                            <div class="col-12 col-lg-3 px-2 text-lg-end pt-1 pb-3 pb-lg-0">
+                                ساعات الدوام
+                            </div>
+                            <div class="col-12 col-lg-9 px-2">
+                                <textarea name="hourWorks" class="editor form-control">{{$settings->hourWorks}}</textarea>
                             </div>
                         </div>
                         <div class="col-12 px-0 d-flex mb-3 row pb-3">

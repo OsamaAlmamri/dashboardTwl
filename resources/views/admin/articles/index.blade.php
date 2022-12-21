@@ -2,11 +2,11 @@
 @section('content')
 <div class="col-12 p-3">
 	<div class="col-12 col-lg-12 p-0 main-box">
-	 
+
 		<div class="col-12 px-0">
 			<div class="col-12 p-0 row">
 				<div class="col-12 col-lg-4 py-3 px-3">
-					<span class="fas fa-articles"></span> المقالات
+					<span class="fas fa-articles"></span> اعمالنا
 				</div>
 				<div class="col-12 col-lg-4 p-0">
 				</div>
@@ -30,8 +30,8 @@
 		</div>
 		<div class="col-12 p-3" style="overflow:auto">
 			<div class="col-12 p-0" style="min-width:1100px;">
-				
-			
+
+
 			<table class="table table-bordered  table-hover">
 				<thead>
 					<tr>
@@ -64,7 +64,7 @@
 						<td style="width: 360px;">
 
 
-							
+
 
 							@permission('articles-read')
 							<a href="{{route('article.show',['article'=>$article])}}">
@@ -73,7 +73,7 @@
 								</span>
 							</a>
 							@endpermission
-							
+
 							@permission('comments-read')
 							<a href="{{route('admin.article-comments.index',['article_id'=>$article->id])}}">
 								<span class="btn  btn-outline-primary btn-sm font-1 mx-1">

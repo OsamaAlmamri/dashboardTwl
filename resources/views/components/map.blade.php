@@ -1,5 +1,5 @@
-<section class="wrapper bg-light pb-16">
-  <div class="container py-14 py-md-16">
+<section class="wrapper bg-light pb-16 dots_right_background">
+  <div class="container py-14 py-md-16 lines_left_background">
     <div class="row">
       <div class="col-xl-10 mx-auto">
         <div class="card">
@@ -17,7 +17,7 @@
               <div class="p-10 p-md-11 p-lg-14">
                 <div class="d-flex flex-row">
                   <div>
-                    <div class="icon text-primary fs-28 me-4 mt-n1"> <i class="fal fa-map-marker-alt"></i> </div>
+                    <div class="icon text-primary fs-28 me-4 mt-n1"> <i class="fal fa-map-marker-alt" style="color: #f7ad42"></i> </div>
                   </div>
                   <div class="align-self-start justify-content-start">
                     <h5 class="mb-1">العنوان</h5>
@@ -27,7 +27,7 @@
                 <!--/div -->
                 <div class="d-flex flex-row">
                   <div>
-                    <div class="icon text-primary fs-28 me-4 mt-n1"> <i class="fal fa-phone"></i> </div>
+                    <div class="icon text-primary fs-28 me-4 mt-n1"> <i class="fal fa-phone" style="color: #f7ad42"></i> </div>
                   </div>
                   <div>
                     <h5 class="mb-1">الجوال</h5>
@@ -37,7 +37,7 @@
                 <!--/div -->
                 <div class="d-flex flex-row">
                   <div>
-                    <div class="icon text-primary fs-28 me-4 mt-n1"> <i class="fal fa-envelope-open"></i> </div>
+                    <div class="icon text-primary fs-28 me-4 mt-n1"> <i class="fal fa-envelope-open" style="color: #f7ad42"></i> </div>
                   </div>
                   <div>
                     <h5 class="mb-1">البريد</h5>

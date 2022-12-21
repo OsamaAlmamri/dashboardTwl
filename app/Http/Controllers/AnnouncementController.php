@@ -29,7 +29,7 @@ class AnnouncementController extends Controller
             if($request->id!=null)
                 $q->where('id',$request->id);
 
-            $q->where('title','LIKE','%'.$request->key.'%');
+//            $q->where('title','LIKE','%'.$request->key.'%');
         })->orderBy('id','DESC')->paginate();
 
         return view('admin.announcements.index',compact('announcements'));
@@ -68,7 +68,7 @@ class AnnouncementController extends Controller
                 'source'=>$request->image,
                 'validation'=>"image",
                 'path_to_save'=>'/uploads/announcements/',
-                'type'=>'ANNOUNCEMENT', 
+                'type'=>'ANNOUNCEMENT',
                 'user_id'=>\Auth::user()->id,
                 'resize'=>[500,1000],
                 'small_path'=>'small/',
@@ -76,7 +76,7 @@ class AnnouncementController extends Controller
                 'file_system_type'=>env('FILESYSTEM_DRIVER'),
                 /*'watermark'=>true,*/
                 'optimize'=>true
-            ]); 
+            ]);
             $announcement->update(['image'=>$file['filename']]);
         }
         toastr()->success(__('utils/toastr.store_success_message'));
@@ -129,7 +129,7 @@ class AnnouncementController extends Controller
                 'source'=>$request->image,
                 'validation'=>"image",
                 'path_to_save'=>'/uploads/announcements/',
-                'type'=>'ANNOUNCEMENT', 
+                'type'=>'ANNOUNCEMENT',
                 'user_id'=>\Auth::user()->id,
                 'resize'=>[500,1000],
                 'small_path'=>'small/',
@@ -137,7 +137,7 @@ class AnnouncementController extends Controller
                 'file_system_type'=>env('FILESYSTEM_DRIVER'),
                 /*'watermark'=>true,*/
                 'optimize'=>true
-            ]); 
+            ]);
             $announcement->update(['image'=>$file['filename']]);
         }
         toastr()->success(__('utils/toastr.update_success_message'));

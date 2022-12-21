@@ -45,6 +45,12 @@ Route::get('/storage_link',function (){
     return '<h1>storage linked</h1>';
 });
 
+Route::get('/migrate',function (){
+    $status = Artisan::call('migrate');
+
+    return '<h1>migrated success </h1>';
+});
+
 
 Route::get('/test/share' , function (){
     /* To Get Data From All function name test In Modules Active Only */
