@@ -1,5 +1,5 @@
-<section class="wrapper bg-light pb-16 dots_right_background">
-  <div class="container py-14 py-md-16 lines_left_background">
+<section class="wrapper bg-light pb-6 ">
+  <div class="container py-5 py-md-6 ">
     <div class="row">
       <div class="col-xl-10 mx-auto">
         <div class="card">
@@ -14,7 +14,7 @@
             </div>
             <!--/column -->
             <div class="col-lg-6">
-              <div class="p-10 p-md-11 p-lg-14">
+              <div class="p-2">
                 <div class="d-flex flex-row">
                   <div>
                     <div class="icon text-primary fs-28 me-4 mt-n1"> <i class="fal fa-map-marker-alt" style="color: #f7ad42"></i> </div>

@@ -1,16 +1,16 @@
-<section class="wrapper bg-light dots_left_background ">
+<section class="wrapper bg-light dots_left_background  ">
   <style type="text/css">
     .swiper-navigation{
       direction: ltr;
     }
 
   </style>
-  <div class="overflow-hidden lines_right_background">
-    <div class="container py-14 py-md-16">
+  <div class="overflow-hidden ">
+    <div class="container py-5 py-md-6">
       <div class="row">
         <div class="col-xl-7 col-xxl-6 mx-auto text-center">
 {{--          <i class="fal fa-pen-alt font-5"></i>--}}
-          <h2 class="display-5 mt-12 text-center mt-2 mb-10">إليك أحدث اعمالنا.</h2>
+          <h2 class="display-5  text-center mt-2 mb-10">إليك أحدث اعمالنا.</h2>
         </div>
         <!--/column -->
       </div>
@@ -19,7 +19,7 @@
 
 
       <!--/.row -->
-      <div class="swiper-container nav-bottom nav-color mb-14"
+      <div class="swiper-container nav-bottom nav-color mb-10"
            data-margin="30" data-dots="false" data-nav="true" data-items-lg="3" data-items-md="2" data-items-xs="1">
         <div class="swiper overflow-visible pb-2">
           <div class="swiper-wrapper">
@@ -28,7 +28,8 @@
                     <div class="swiper-slide">
                         <article>
                             <div class="card shadow-lg">
-                                <figure class="card-img-top overlay overlay-1"><a href="{{route('article.show',$article)}}"> <img src="{{$article->main_image()}}" alt="" style="height:280px !important;object-fit: cover;vertical-align: middle;" /></a>
+                                <figure class="card-img-top overlay overlay-1"><a href="{{route('article.show',$article)}}">
+                                        <img src="{{$article->main_image()}}" alt="" style="height:280px !important;object-fit: cover;vertical-align: middle;" /></a>
                                     <figcaption>
                                         <h5 class="from-top mb-0 text-center">عرض المزيد</h5>
                                     </figcaption>

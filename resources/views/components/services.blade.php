@@ -1,13 +1,13 @@
-<section dir="rtl" class="wrapper swiper-rtl bg-light dots_left_background">
+<section dir="rtl" class="wrapper swiper-rtl bg-light ">
     <style type="text/css">
         .swiper-navigation {
             direction: rtl;
         }
     </style>
     <div class="overflow-hidden">
-        <div class="container py-14 py-md-16 lines_right_background">
+        <div class="container py-5 py-md-6 lines_right_background">
             <div class="row">
-                <div class="col-md-10 mt-15 offset-md-1 col-lg-8 offset-lg-2">
+                <div class="col-md-10 mt-5 offset-md-1 col-lg-8 offset-lg-2">
                     <h2 class=" text-uppercase  mb-3 text-center">ماذا نقدم ؟</h2>
                     <h3 class="display-4 mb-10 px-xl-10 text-center" style="color: #0e0d0c !important;">قائمة الخدمات التي نقدمها لكم.</h3>
                 </div>

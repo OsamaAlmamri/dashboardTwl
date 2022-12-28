@@ -1,11 +1,11 @@
-<section class="wrapper bg-light lines_left_background">
+<section class="wrapper bg-light ">
     <style type="text/css">
         .swiper-navigation {
             direction: ltr;
         }
     </style>
     <div class="overflow-hidden">
-        <div class="container py-14 py-md-16">
+        <div class="container py-5 py-md-6">
             <div class="row">
                 <div class="col-xl-7 col-xxl-6 mx-auto text-center">
 {{--                    <i class="fal fa-pen-alt font-5"></i>--}}

@@ -1,10 +1,12 @@
 @extends('layouts.app')
 @section('content')
+{{--    <x-slider1/>--}}
 
     {{--    <x-slider2/>--}}
-    @include('components.slider2')
+    @include('components.slider1')
+{{--    @include('components.slider2')--}}
 
-{{--    <x-has_project/>--}}
+    {{--    <x-has_project/>--}}
 
     <x-about/>
     {{--<x-start />--}}
@@ -16,7 +18,6 @@
 
 
     {{--    <x-clients/>--}}
-    {{--    <x-slider1/>--}}
 {{--    <x-blog/>--}}
 {{--    <x-our-blogs />--}}
 {{--    <x-numbers/>--}}

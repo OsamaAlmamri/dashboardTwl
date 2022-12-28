@@ -1,4 +1,4 @@
-<footer class="bg-soft-primary pt-5">
+<footer class="card pt-5">
     {{--    <div class="container">--}}
     {{--        <div class="row">--}}
     {{--            <div class="col-xl-11 col-xxl-10 mx-auto">--}}
@@ -46,7 +46,7 @@
                                                                           class="f-logo">
                 </a>
                 <div class="f_widget about-widget"><a href="http://tatbeqakum.test" class="f-logo">
-                        <h3 class="f-title f_600 t_color f_size_25 mb_40">تواصل معنا</h3>
+                        <h3 class="f-title f_600 sm:my-5 t_color f_size_25 mb_40">تواصل معنا</h3>
                     </a>
                     <div class="pp_contact_info"><a href="http://tatbeqakum.test" class="f-logo">
                             <div class="media pp_contact_item">
@@ -77,14 +77,14 @@
                             </div>
                         </div>
 
-                        <div class="media pp_contact_item">
+{{--                        <div class="media pp_contact_item">--}}
 
 
-                            <div class="mmedia-body" dir="ltr">
-                                <a href="call:{{$settings->phone}} "><span dir="ltr">{{$settings->phone}} </span></a>
+{{--                            <div class="mmedia-body" dir="ltr">--}}
+{{--                                <a href="call:{{$settings->phone}} "><span dir="ltr">{{$settings->phone}} </span></a>--}}
 
-                            </div>
-                        </div>
+{{--                            </div>--}}
+{{--                        </div>--}}
 
                     </div>
 
@@ -137,9 +137,11 @@
                 {{--          <!--/column -->--}}
                 {{--        </div>--}}
                 <!--/.row -->
-                <p class="text-center">© {{date('Y')}} <a href="http://tatbeqakum.com" target="_blank">تطبيقكم</a>.
-                    جميع الحقوق محفوظة.</p>
-                <nav class="nav social justify-content-center">
+
+                <div class="row md:mt-5 ">
+
+
+                <nav class="col-12 col-md-6 nav social  justify-content-center">
                     @if($settings->twitter_link!=null)
                         <a href="{{$settings->twitter_link}}"><i class="fab fa-twitter"></i></a>
                     @endif
@@ -156,6 +158,14 @@
                         <a href="{{$settings->whatsapp_link}}"><i class="fab fa-whatsapp"></i></a>
                     @endif
                 </nav>
+
+                <p class=" col-12 col-md-6 text-center">
+
+                    برمجة وتطوير <a href="http://tatbeqakum.com" target="_blank">تطبيقكم</a>
+
+                    © {{date('Y')}}
+                </p>
+                </div>
                 <!-- /.social -->
             </div>
             <!-- /column -->

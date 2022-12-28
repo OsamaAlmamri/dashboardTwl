@@ -175,7 +175,8 @@
         /*}*/
 
         #myBtn {
-            display: none;
+            /*display: none;*/
+            display: block;
             position: fixed;
             bottom: 20px;
             right: 30px;
@@ -207,6 +208,10 @@
         .header_footer_bottom {
             font-size: 20px;
             text-align: center;
+        }
+
+        .swiper-container.dots-closer .swiper-pagination {
+            bottom: 0rem;
         }
     </style>
     @yield('styles')
@@ -243,7 +248,7 @@
     <script src="{{asset('/assets/js/plugins.js')}}"></script>
     <script src="{{asset('/assets/js/theme.js')}}"></script>
 <script>
-    let mybutton = document.getElementById("myBtn");
+    // let mybutton = document.getElementById("myBtn");
 
     // When the user scrolls down 20px from the top of the document, show the button
     window.onscroll = function() {scrollFunction()};

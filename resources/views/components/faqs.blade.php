@@ -1,6 +1,6 @@
-<section class="wrapper bg-light dots2_left_background">
-  <div class="container py-14 py-md-16 lines_right_background">
-    <h2 class="display-4 mb-3 text-center mt-12">الأسئلة الشائعة</h2>
+<section class="wrapper bg-light ">
+  <div class="container py-5 py-md-6 ">
+    <h2 class="display-4 mb-3 text-center mt-2">الأسئلة الشائعة</h2>
     <p class=" text-center mb-10 px-md-16 px-lg-0" >نرد على الاستفسارات الخاصة بكم في صورة سؤال وجواب.</p>
     <div class="row">
       <div class="col-lg-12 mb-0">
