@@ -9,14 +9,15 @@
     </div>
     <!--/.row -->
     <div class="row grid-view gx-md-8 gx-xl-10 gy-8 gy-lg-0">
-      <div class="col-md-6 col-lg-3">
+        @foreach($teams as $team)
+      <div class="col-md-6 col-lg-3 my-2">
         <div class="position-relative">
           <div class="shape rounded bg-soft-blue rellax d-md-block" data-rellax-speed="0" style="bottom: -0.75rem; right: -0.75rem; width: 98%; height: 98%; z-index:0"></div>
           <div class="card">
-            <figure class="card-img-top"><img class="img-fluid" src="/assets/img/avatars/team1.jpg" srcset="./assets/img/avatars/t1@2x.jpg 2x" alt="" /></figure>
+            <figure class="card-img-top"><img class="img-fluid" src="{{$team->image()}}"  alt="" /></figure>
             <div class="card-body px-6 py-5">
-              <h4 class="mb-1">بيتر ثروت</h4>
-              <p class="mb-0">رئيس مجلس الإدارة</p>
+              <h4 class="mb-1 text-center">{{$team->name}}</h4>
+              <a class="mb-0 text-center" href="tel:+{{$team->phone}}"> {{$team->phone}}</a>
             </div>
             <!--/.card-body -->
           </div>
@@ -24,54 +25,10 @@
         </div>
         <!-- /div -->
       </div>
+
+        @endforeach
       <!--/column -->
-      <div class="col-md-6 col-lg-3">
-        <div class="position-relative">
-          <div class="shape rounded bg-soft-red rellax d-md-block" data-rellax-speed="0" style="bottom: -0.75rem; right: -0.75rem; width: 98%; height: 98%; z-index:0"></div>
-          <div class="card">
-            <figure class="card-img-top"><img class="img-fluid" src="/assets/img/avatars/team2.jpg" srcset="./assets/img/avatars/t2@2x.jpg 2x" alt="" /></figure>
-            <div class="card-body px-6 py-5">
-              <h4 class="mb-1">عمر ايهاب</h4>
-              <p class="mb-0">نائب الرئيس</p>
-            </div>
-            <!--/.card-body -->
-          </div>
-          <!-- /.card -->
-        </div>
-        <!-- /div -->
-      </div>
-      <!--/column -->
-      <div class="col-md-6 col-lg-3">
-        <div class="position-relative">
-          <div class="shape rounded bg-soft-green rellax d-md-block" data-rellax-speed="0" style="bottom: -0.75rem; right: -0.75rem; width: 98%; height: 98%; z-index:0"></div>
-          <div class="card">
-            <figure class="card-img-top"><img class="img-fluid" src="/assets/img/avatars/team3.jpg" srcset="./assets/img/avatars/t3@2x.jpg 2x" alt="" /></figure>
-            <div class="card-body px-6 py-5">
-              <h4 class="mb-1">يوسف أحمد</h4>
-              <p class="mb-0">المدير المالي</p>
-            </div>
-            <!--/.card-body -->
-          </div>
-          <!-- /.card -->
-        </div>
-        <!-- /div -->
-      </div>
-      <!--/column -->
-      <div class="col-md-6 col-lg-3">
-        <div class="position-relative">
-          <div class="shape rounded bg-soft-violet rellax d-md-block" data-rellax-speed="0" style="bottom: -0.75rem; right: -0.75rem; width: 98%; height: 98%; z-index:0"></div>
-          <div class="card">
-            <figure class="card-img-top"><img class="img-fluid" src="./assets/img/avatars/team4.jpg" srcset="./assets/img/avatars/t4@2x.jpg 2x" alt="" /></figure>
-            <div class="card-body px-6 py-5">
-              <h4 class="mb-1">هندام جمال الدين</h4>
-              <p class="mb-0">مديرة العلاقات العامة</p>
-            </div>
-            <!--/.card-body -->
-          </div>
-          <!-- /.card -->
-        </div>
-        <!-- /div -->
-      </div>
+
       <!--/column -->
     </div>
     <!--/.row -->

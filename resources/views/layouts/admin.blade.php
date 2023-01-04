@@ -312,6 +312,9 @@
 {{--                                    @permission('projects-read')--}}
 {{--                                    <li><a href="{{route('admin.projects.index')}}" style="font-size: 16px;"><span class="fal fa-tag px-2" style="width: 28px;font-size: 15px;"></span> اعمالنا</a></li>--}}
 {{--                                    @endpermission--}}
+                                    @permission('teams-read')
+                                    <li><a href="{{route('admin.teams2.index')}}" style="font-size: 16px;"><span class="fal fa-tag px-2" style="width: 28px;font-size: 15px;"></span> الفريق</a></li>
+                                    @endpermission
                                     @permission('clients-read')
                                     <li><a href="{{route('admin.clients.index')}}" style="font-size: 16px;"><span class="fal fa-tag px-2" style="width: 28px;font-size: 15px;"></span> العملاء</a></li>
                                     @endpermission

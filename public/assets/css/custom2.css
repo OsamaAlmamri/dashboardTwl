@@ -159,7 +159,7 @@
     font-size: 44px;
     font-weight: 700;
     margin-bottom: 15px;
-    color: #d1334b;
+    color: #25799b;
 }
 
 .saas_banner_area_three .slider_item .slidet_content p {
@@ -201,7 +201,7 @@
 }
 
 #pp-nav li a span {
-    background: #d1334b;
+    background: #38739b;
     border: 0;
     width: 6px;
     height: 6px;
@@ -256,7 +256,7 @@
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background: #d1334b;
+    background: #38739b;
     display: inline-block;
     color: #ffffff;
     text-align: center;
@@ -280,7 +280,7 @@
     font-size: 50px;
     line-height: 60px;
     font-weight: 300;
-    color: #d1334b;
+    color: #25799b;
     margin-bottom: 40px;
 }
 
@@ -347,7 +347,7 @@
 }
 
 .hosting_btn:hover {
-    background: #d1334b;
+    background: #38739b;
 }
 
 .hosting_btn {
@@ -813,7 +813,7 @@
     font-size: 44px;
     font-weight: 700;
     margin-bottom: 15px;
-    color: #d1334b;
+    color: #25799b;
 }
 
 .mb_50 {
@@ -865,12 +865,12 @@
 .pp_contact_info .pp_contact_item .mmedia-body {
     font-size: 18px;
     line-height: 28px;
-    color: #d1334b;
+    color: #25799b;
     font-weight: 400;
 }
 
 .pp_contact_info .pp_contact_item .mmedia-body a {
-    color: #d1334b;
+    color: #25799b;
     display: block;
 }
 
@@ -884,7 +884,7 @@
     font-size: 30px;
     font-weight: 700;
     margin-bottom: 15px;
-    color: #d1334b;
+    color: #25799b;
     display: unset;
     padding-bottom: unset;
 }
@@ -1306,7 +1306,7 @@
         font-size: 24px;
         font-weight: 700;
         margin-bottom: 15px;
-        color: #d1334b;
+        color: #25799b;
     }
 
     .social_section {
@@ -1317,7 +1317,7 @@
 
 .f_social_icon_two a {
     font-size: 14px;
-    color: #d1334b;
+    color: #38739b;
     margin: 0 8px;
 }
 
@@ -1334,7 +1334,7 @@
     .f_social_icon_two a {
         /*display: none;*/
         font-size: 12px;
-        color: #d1334b;
+        color: #38739b;
         margin: 0 2px;
     }
 }
@@ -1356,7 +1356,7 @@
     .f_social_icon_two a {
         /*display: none;*/
         font-size: 12px;
-        color: #d1334b;
+        color: #38739b;
         margin: 0 2px;
     }
 }

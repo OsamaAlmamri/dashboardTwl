@@ -16,12 +16,15 @@
       <div class="offcanvas-body  d-flex flex-column h-100">
         <ul class="navbar-nav">
           @php
-          $menu = \App\Models\Menu::where('location',"NAVBAR")->with(['links'=>function($q){$q->orderBy('order','ASC');}])->first();
+          $menu = \App\Models\Menu::where('location',"NAVBAR")
+          ->with(['links'=>function($q){$q->orderBy('order','ASC');}])->first();
           @endphp
 
           @if($menu !=null)
             @foreach($menu->links as $link)
-            <li class="nav-item"><a class="nav-link" href="{{$link->url}}"><span class="{{$link->icon}} font-1" style="color: #ffc107;width: 15px"></span> {{$link->title}}</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{$link->url}}"><span class="{{$link->icon}} font-1"
+                                                                                 style="width: 15px"
+                    ></span> {{$link->title}}</a></li>
             @endforeach
           @endif
             <nav class="nav social  d-lg-none justify-content-center">

@@ -6,6 +6,7 @@ use App\Models\Announcement;
 use App\Models\Article;
 use App\Models\Client;
 use App\Models\Service;
+use App\Models\Team2;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -27,6 +28,7 @@ class HomeController extends Controller
      */
     public function index()
     {
+        $teams = Team2::orderBy('id', 'ASC')->get();
         $services = Service::orderBy('id', 'ASC')->get();
         $clients = Client::orderBy('id', 'ASC')->get();
         $announcements = Announcement::orderBy('id', 'ASC')->get();
@@ -34,7 +36,7 @@ class HomeController extends Controller
             ->withCount(['comments'=>function($q){$q->where('reviewed',1);}])
             ->orderBy('id','DESC')->limit(10)->get();
 
-        return view('front.index', compact('services', 'clients','announcements','articles'));
+        return view('front.index', compact('teams','services', 'clients','announcements','articles'));
 
     }
 }

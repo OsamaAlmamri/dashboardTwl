@@ -130,42 +130,7 @@
             right: -1px!important;
         }
 
-        .dots_left_background
-        {
-            background-image: url("images/nouf/662.png");
-            background-position:top left;
-            background-repeat: no-repeat;
-            background-size: auto;
-        }
-        .dots2_left_background
-        {
-            background-image: url("images/nouf/664.png");
-            background-position:top left;
-            background-repeat: no-repeat;
-            background-size: auto;
-        }
-        .dots_right_background
-        {
-            background-image: url("images/nouf/664.png");
-            background-position:top right;
-            background-repeat: no-repeat;
-            background-size: auto;
-        }
 
-        .lines_right_background
-        {
-            background-image: url("images/nouf/663.png");
-            background-position: top right;
-            background-repeat: no-repeat;
-            background-size: auto;
-        }
-        .lines_left_background
-        {
-            background-image: url("images/nouf/663.png");
-            background-position: top left;
-            background-repeat: no-repeat;
-            background-size: auto;
-        }
         .bg-light {
             --bs-bg-opacity: 1;
              background-color:unset !important;
@@ -191,19 +156,19 @@
             border-radius: 44px;
         }
 
-        .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-            color: #d1334b;
-            /*color: #f7ad42;*/
+        /*.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {*/
+        /*    color: #d1334b;*/
+        /*    !*color: #f7ad42;*!*/
 
-        }
+        /*}*/
 
-        .swiper-container.nav-color .swiper-button, .swiper-container.nav-color .swiper-slide figure .item-link {
-            background: rgb(247 173 66) !important;
-            color: #fff !important;
-        }
-        a{
-            color: rgb(247 173 66) !important;
-        }
+        /*.swiper-container.nav-color .swiper-button, .swiper-container.nav-color .swiper-slide figure .item-link {*/
+        /*    background: rgb(247 173 66) !important;*/
+        /*    color: #fff !important;*/
+        /*}*/
+        /*a{*/
+        /*    color: rgb(247 173 66) !important;*/
+        /*}*/
 
         .header_footer_bottom {
             font-size: 20px;

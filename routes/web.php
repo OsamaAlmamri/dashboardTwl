@@ -3,6 +3,7 @@
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\TeamsController;
 use App\Models\User;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
@@ -93,6 +94,8 @@ Route::prefix('admin')->middleware(['auth','ActiveAccount'])->name('admin.')->gr
         Route::post('menu-links/order',[MenuLinkController::class,'order'])->name('menu-links.order');
         Route::resource('menu-links',MenuLinkController::class);
         Route::resource('categories',CategoryController::class);
+//        Route::resource('teams',CategoryController::class);
+        Route::resource('teams2',TeamsController::class);
         Route::resource('services',ServiceController::class);
         Route::resource('clients',ClientController::class);
         Route::resource('projects',ProjectController::class);

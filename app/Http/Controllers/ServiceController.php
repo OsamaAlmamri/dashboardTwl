@@ -109,6 +109,7 @@ class ServiceController extends Controller
      */
     public function edit(Service $service)
     {
+
         if(!auth()->user()->isAbleTo('services-update'))abort(403);
         return view('admin.services.edit',compact('service'));
     }

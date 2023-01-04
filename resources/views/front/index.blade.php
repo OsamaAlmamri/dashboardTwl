@@ -17,17 +17,19 @@
     @include('components.our-blogs')
 
 
+
     {{--    <x-clients/>--}}
 {{--    <x-blog/>--}}
 {{--    <x-our-blogs />--}}
 {{--    <x-numbers/>--}}
     <x-faqs/>
-    {{--    <x-team/>--}}
+
+@include('components.team')
 
 {{--    <x-articles-slider2/>--}}
 {{--    <x-articles-slider1 />--}}
 
     <x-map/>
-    <x-hours_work/>
+{{--    <x-hours_work/>--}}
     {{--<x-call-to-action />--}}
 @endsection
