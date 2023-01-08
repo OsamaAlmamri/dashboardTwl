@@ -12,6 +12,7 @@
     {{--<x-start />--}}
     {{--    <x-services services ="{{$services}}"/>--}}
     {{--    @include('components.slider2')--}}
+    @include('components.match')
     @include('components.services')
     @include('components.clients')
     @include('components.our-blogs')

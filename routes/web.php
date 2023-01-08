@@ -1,8 +1,12 @@
 <?php
 
 use App\Http\Controllers\ClientController;
+use App\Http\Controllers\ClubMatchesController;
+use App\Http\Controllers\ClubsController;
+use App\Http\Controllers\LeaguesController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\StadiaController;
 use App\Http\Controllers\TeamsController;
 use App\Models\User;
 use Illuminate\Support\Facades\Artisan;
@@ -96,6 +100,10 @@ Route::prefix('admin')->middleware(['auth','ActiveAccount'])->name('admin.')->gr
         Route::resource('categories',CategoryController::class);
 //        Route::resource('teams',CategoryController::class);
         Route::resource('teams2',TeamsController::class);
+        Route::resource('leagues',LeaguesController::class);
+        Route::resource('clubs',ClubsController::class);
+        Route::resource('stadia',StadiaController::class);
+        Route::resource('club_matches',ClubMatchesController::class);
         Route::resource('services',ServiceController::class);
         Route::resource('clients',ClientController::class);
         Route::resource('projects',ProjectController::class);

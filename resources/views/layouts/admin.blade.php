@@ -315,6 +315,18 @@
                                     @permission('teams-read')
                                     <li><a href="{{route('admin.teams2.index')}}" style="font-size: 16px;"><span class="fal fa-tag px-2" style="width: 28px;font-size: 15px;"></span> الفريق</a></li>
                                     @endpermission
+                                    @permission('leagues-read')
+                                    <li><a href="{{route('admin.leagues.index')}}" style="font-size: 16px;"><span class="fal fa-tag px-2" style="width: 28px;font-size: 15px;"></span> الدوريات</a></li>
+                                    @endpermission
+                                    @permission('clubs-read')
+                                    <li><a href="{{route('admin.clubs.index')}}" style="font-size: 16px;"><span class="fal fa-tag px-2" style="width: 28px;font-size: 15px;"></span> الاندية</a></li>
+                                    @endpermission
+                                    @permission('teams-read')
+                                    <li><a href="{{route('admin.stadia.index')}}" style="font-size: 16px;"><span class="fal fa-tag px-2" style="width: 28px;font-size: 15px;"></span> الملاعب</a></li>
+                                    @endpermission
+                                    @permission('teams-read')
+                                    <li><a href="{{route('admin.club_matches.index')}}" style="font-size: 16px;"><span class="fal fa-tag px-2" style="width: 28px;font-size: 15px;"></span> المباريات</a></li>
+                                    @endpermission
                                     @permission('clients-read')
                                     <li><a href="{{route('admin.clients.index')}}" style="font-size: 16px;"><span class="fal fa-tag px-2" style="width: 28px;font-size: 15px;"></span> العملاء</a></li>
                                     @endpermission

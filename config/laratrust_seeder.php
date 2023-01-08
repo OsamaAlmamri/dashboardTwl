@@ -62,6 +62,8 @@ return [
             'traffics' => 'c,r,u,d',
             'clubs' => 'c,r,u,d',
             'club-match' => 'c,r,u,d',
+            'leagues' => 'c,r,u,d',
+            'stadia' => 'c,r,u,d',
             'teams' => 'c,r,u,d',
             'profile' => 'r,u',
         ],

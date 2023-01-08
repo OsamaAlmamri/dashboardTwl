@@ -5,7 +5,7 @@
 
 
             <form id="validate-form" class="row" enctype="multipart/form-data" method="POST"
-                  action="{{route('admin.teams2.update',$team)}}"
+                  action="{{route('admin.clubs.update',$club)}}"
             >
                 @csrf
                 @method("PUT")
@@ -26,19 +26,10 @@
                             </div>
                             <div class="col-12 pt-3">
                                 <input type="text" name="name" required maxlength="190" class="form-control"
-                                       value="{{$team->name}}">
+                                       value="{{$club->name}}">
                             </div>
                         </div>
 
-                        <div class="col-12 col-lg-6 p-2">
-                            <div class="col-12">
-                                رقم الهاتف
-                            </div>
-                            <div class="col-12 pt-3">
-                                <input type="text" name="phone" required maxlength="190" class="form-control"
-                                       value="{{$team->phone}}">
-                            </div>
-                        </div>
 
 
                         <div class="col-12 p-2">
@@ -49,7 +40,7 @@
                                 <input type="file" name="image" class="form-control" accept="image/*">
                             </div>
                             <div class="col-12 pt-3">
-                                <img src="{{$team->image()}}" style="width:100px">
+                                <img src="{{$club->image()}}" style="width:100px">
                             </div>
                         </div>
 
@@ -59,7 +50,7 @@
                         {{--					الوصف--}}
                         {{--				</div>--}}
                         {{--				<div class="col-12 pt-3">--}}
-                        {{--					<textarea name="description" class="editor with-file-explorer" >{{$team->description}}</textarea>--}}
+                        {{--					<textarea name="description" class="editor with-file-explorer" >{{$club->description}}</textarea>--}}
                         {{--				</div>--}}
                         {{--			</div>--}}
 
@@ -68,7 +59,7 @@
                         {{--					ميتا الوصف--}}
                         {{--				</div>--}}
                         {{--				<div class="col-12 pt-3">--}}
-                        {{--					<textarea name="meta_description" class="form-control" style="min-height:150px">{{$team->meta_description}}</textarea>--}}
+                        {{--					<textarea name="meta_description" class="form-control" style="min-height:150px">{{$club->meta_description}}</textarea>--}}
                         {{--				</div>--}}
                         {{--			</div>--}}
                     </div>
