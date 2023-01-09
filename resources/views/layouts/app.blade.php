@@ -226,6 +226,14 @@
         }
     }
 
+    $('.settings-tab-opener').on('click', function () {
+        $('.settings-tab-opener').removeClass('active');
+        $(this).addClass('active');
+        var open_id = $(this).attr('data-opentab');
+        $('.taber').removeClass('active');
+        $('.taber#' + open_id).addClass('active');
+    });
+
 
 </script>
 

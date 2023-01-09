@@ -30,13 +30,26 @@
                             </div>
                         </div>
 
-                        <div class="col-12 col-lg-6 p-2">
+                        <div class="col-6 col-lg-3 p-2">
                             <div class="col-12">
-                                رقم الهاتف
+                                الرقم
                             </div>
                             <div class="col-12 pt-3">
-                                <input type="text" name="phone" required maxlength="190" class="form-control"
-                                       value="{{$team->phone}}">
+                                <input type="text" name="number" required maxlength="190" class="form-control"
+                                       value="{{$team->number}}">
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-lg-3 p-2">
+                            <div class="col-12">
+                                الموقع
+                            </div>
+                            <div class="col-12 pt-3">
+                                <select class="form-control select2-select" name="position" required  size="1" style="height:30px;opacity: 0;">
+                                    @foreach($positions as $position)
+                                        <option value="{{$position}}" @if($team->position==$position) selected @endif>{{trans('lang.'.$position)}}</option>
+                                    @endforeach
+                                </select>
                             </div>
                         </div>
 

@@ -38,6 +38,7 @@
 						<th>#</th>
 						<th>الاسم</th>
 						<th>الرقم</th>
+						<th>الموقع</th>
 						<th>الصورة</th>
 						<th>تحكم</th>
 					</tr>
@@ -48,7 +49,8 @@
 						<td>{{$team->id}}</td>
 
 						<td>{{$team->name}}</td>
-						<td>{{$team->phone}}</td>
+						<td>{{$team->number}}</td>
+						<td>{{trans('lang.'.$team->position)}}</td>
 						<td><img src="{{$team->image()}}" style="width:40px"></td>
 
 						<td style="width: 180px;">

@@ -106,6 +106,8 @@ Route::prefix('admin')->middleware(['auth','ActiveAccount'])->name('admin.')->gr
         Route::resource('club_matches',ClubMatchesController::class);
         Route::resource('services',ServiceController::class);
         Route::resource('clients',ClientController::class);
+        Route::resource('championships',\App\Http\Controllers\ChampionshipController::class);
+        Route::resource('partners',\App\Http\Controllers\PartnerController::class);
         Route::resource('projects',ProjectController::class);
         Route::resource('redirections',RedirectionController::class);
         Route::get('traffics',[TrafficsController::class,'index'])->name('traffics.index');

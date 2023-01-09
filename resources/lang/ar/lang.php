@@ -1,8 +1,12 @@
-<?php 
+<?php
 
 
 return [
-
+    'Midfielder'=>" خط وسط",
+    'Defender'=>" مدافع",
+    'Forworder'=>"مهاجم",
+    'GoalKeeper'=>"حارس مرمى",
+    'Coach'=>"مدرب",
 	//login
 	"email"=>"البريد الالكتروني",
 	"password"=>"كلمة المرور",
@@ -19,7 +23,7 @@ return [
 	"Before proceeding, please check your email for a verification link."=>"قبل المتابعة برجاء فحص رابط التفعيل في  البريد الخاص بك.",
 	"If you did not receive the email"=>"إذا لم تتلقى بريد تفعيل",
 	"click here to request another"=>"إضغط هنا لإرسال رابط آخر بديل",
-	
+
 
 
 

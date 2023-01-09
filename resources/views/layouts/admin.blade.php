@@ -306,9 +306,9 @@
                                     @permission('categories-read')
                                     <li><a href="{{route('admin.categories.index')}}" style="font-size: 16px;"><span class="fal fa-tag px-2" style="width: 28px;font-size: 15px;"></span> الأقسام</a></li>
                                     @endpermission
-                                    @permission('services-read')
-                                    <li><a href="{{route('admin.services.index')}}" style="font-size: 16px;"><span class="fal fa-tag px-2" style="width: 28px;font-size: 15px;"></span> الخدمات</a></li>
-                                    @endpermission
+{{--                                    @permission('services-read')--}}
+{{--                                    <li><a href="{{route('admin.services.index')}}" style="font-size: 16px;"><span class="fal fa-tag px-2" style="width: 28px;font-size: 15px;"></span> الخدمات</a></li>--}}
+{{--                                    @endpermission--}}
 {{--                                    @permission('projects-read')--}}
 {{--                                    <li><a href="{{route('admin.projects.index')}}" style="font-size: 16px;"><span class="fal fa-tag px-2" style="width: 28px;font-size: 15px;"></span> اعمالنا</a></li>--}}
 {{--                                    @endpermission--}}
@@ -328,10 +328,17 @@
                                     <li><a href="{{route('admin.club_matches.index')}}" style="font-size: 16px;"><span class="fal fa-tag px-2" style="width: 28px;font-size: 15px;"></span> المباريات</a></li>
                                     @endpermission
                                     @permission('clients-read')
-                                    <li><a href="{{route('admin.clients.index')}}" style="font-size: 16px;"><span class="fal fa-tag px-2" style="width: 28px;font-size: 15px;"></span> العملاء</a></li>
+                                    <li><a href="{{route('admin.clients.index')}}" style="font-size: 16px;"><span class="fal fa-tag px-2" style="width: 28px;font-size: 15px;"></span> شركائنا </a></li>
+                                    @endpermission
+                                    @permission('partners-read')
+                                    <li><a href="{{route('admin.partners.index')}}" style="font-size: 16px;"><span class="fal fa-tag px-2" style="width: 28px;font-size: 15px;"></span> الشريك الاستراتيجي </a></li>
                                     @endpermission
                                     @permission('articles-read')
-                                    <li><a href="{{route('admin.articles.index')}}" style="font-size: 16px;"><span class="fal fa-book px-2" style="width: 28px;font-size: 15px;"></span> اعمالنا</a></li>
+                                    <li><a href="{{route('admin.articles.index')}}" style="font-size: 16px;"><span class="fal fa-book px-2" style="width: 28px;font-size: 15px;"></span> الأخبار </a></li>
+                                    @endpermission
+
+                                    @permission('championships-read')
+                                    <li><a href="{{route('admin.championships.index')}}" style="font-size: 16px;"><span class="fal fa-book px-2" style="width: 28px;font-size: 15px;"></span> البطولات </a></li>
                                     @endpermission
 
                                     @permission('comments-read')

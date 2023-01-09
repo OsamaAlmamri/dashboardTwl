@@ -10,7 +10,7 @@
       <div class="row">
         <div class="col-xl-7 col-xxl-6 mx-auto text-center">
 {{--          <i class="fal fa-pen-alt font-5"></i>--}}
-          <h2 class="display-5  text-center mt-2 mb-10">إليك أحدث اعمالنا.</h2>
+          <h2 class="display-5  text-center mt-2 mb-10">  آخر الأخبار .</h2>
         </div>
         <!--/column -->
       </div>

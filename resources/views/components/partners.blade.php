@@ -9,7 +9,7 @@
             <div class="row">
                 <div class="col-xl-7 col-xxl-6 mx-auto text-center">
 {{--                    <i class="fal fa-pen-alt font-5"></i>--}}
-                    <h2 class="display-5 text-center mt-2 mb-10">شركائنا  </h2>
+                    <h2 class="display-5 text-center mt-2 mb-10">الشريك الاستراتيجي  </h2>
                 </div>
                 <!--/column -->
             </div>
@@ -21,8 +21,8 @@
                 <div class="swiper overflow-visible pb-2">
 
                     <div class="swiper-wrapper">
-                        @foreach($clients as $client)
-                            <div class="swiper-slide px-5"><img src="{{$client->image()}}" alt=""/></div>
+                        @foreach($partners as $partner)
+                            <div class="swiper-slide px-5"><img src="{{$partner->image()}}" alt=""/></div>
                         @endforeach
 
                     </div>

@@ -95,22 +95,22 @@
                                 <textarea name="footer_about" class=" form-control">{{$settings->footer_about}}</textarea>
                             </div>
                         </div>
-                        <div class="col-12 px-0 d-flex mb-3 row pb-3">
-                            <div class="col-12 col-lg-3 px-2 text-lg-end pt-1 pb-3 pb-lg-0">
-                                عن الموقع
-                            </div>
-                            <div class="col-12 col-lg-9 px-2">
-                                <textarea name="website_bio" class="editor form-control">{{$settings->website_bio}}</textarea>
-                            </div>
-                        </div>
-                        <div class="col-12 px-0 d-flex mb-3 row pb-3">
-                            <div class="col-12 col-lg-3 px-2 text-lg-end pt-1 pb-3 pb-lg-0">
-                                ساعات الدوام
-                            </div>
-                            <div class="col-12 col-lg-9 px-2">
-                                <textarea name="hourWorks" class="editor form-control">{{$settings->hourWorks}}</textarea>
-                            </div>
-                        </div>
+{{--                        <div class="col-12 px-0 d-flex mb-3 row pb-3">--}}
+{{--                            <div class="col-12 col-lg-3 px-2 text-lg-end pt-1 pb-3 pb-lg-0">--}}
+{{--                                عن الموقع--}}
+{{--                            </div>--}}
+{{--                            <div class="col-12 col-lg-9 px-2">--}}
+{{--                                <textarea name="website_bio" class="editor form-control">{{$settings->website_bio}}</textarea>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="col-12 px-0 d-flex mb-3 row pb-3">--}}
+{{--                            <div class="col-12 col-lg-3 px-2 text-lg-end pt-1 pb-3 pb-lg-0">--}}
+{{--                                ساعات الدوام--}}
+{{--                            </div>--}}
+{{--                            <div class="col-12 col-lg-9 px-2">--}}
+{{--                                <textarea name="hourWorks" class="editor form-control">{{$settings->hourWorks}}</textarea>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
                         <div class="col-12 px-0 d-flex mb-3 row pb-3">
                             <div class="col-12 col-lg-3 px-2 text-lg-end pt-1 pb-3 pb-lg-0">
                                 بريد التواصل

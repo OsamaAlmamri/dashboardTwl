@@ -4,7 +4,8 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration {
+return new class extends Migration
+{
     /**
      * Run the migrations.
      *
@@ -12,16 +13,12 @@ return new class extends Migration {
      */
     public function up()
     {
-        Schema::create('teams2', function (Blueprint $table) {
+        Schema::create('championships', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('user_id')->nullable();
             $table->foreign('user_id')->references('id')->on("users")->onDelete('cascade');
             $table->string('image')->nullable();
-//            $table->string('slug')->unique()->index();
-            $table->string('name')->nullable();
-            $table->string('number')->nullable();
-            $table->longText('description')->nullable();
-            $table->text('meta_description')->nullable();
+            $table->text('title')->nullable();
             $table->timestamps();
         });
     }
@@ -33,6 +30,6 @@ return new class extends Migration {
      */
     public function down()
     {
-        Schema::dropIfExists('teams2');
+        Schema::dropIfExists('championships');
     }
 };
